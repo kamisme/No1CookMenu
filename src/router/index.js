@@ -5,6 +5,8 @@ import http from '../utils/HttpClient'
 // import HomeComponent from '../components/home/HomeComponent.vue'
 import LoginComponent from '../components/login/LoginComponent.vue'
 import FoodDetailComponent from '../components/FoodDetail/FoodDetailComponent.vue'
+import LifeCircleCompoent from '../components/LifeCircle/LifeCircleComponent.vue'
+
 Vue.use(VueRouter)
 
 const router = new VueRouter({
@@ -16,6 +18,10 @@ const router = new VueRouter({
         path:'/FoodDetail',
         name:'FoodDetail',
         component:FoodDetailComponent
+    },{
+    	path:"/LifeCircle",
+    	name:"LifeCircle",
+    	component:LifeCircleCompoent
     }]
 })
 

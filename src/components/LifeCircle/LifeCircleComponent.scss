@@ -1,0 +1,41 @@
+.LifeCircle{
+		h1{
+			height: 68px;
+			width: 100%;
+			text-align:center;
+			color:#fff;
+			line-height:68px;
+			position:relative;
+			img{
+				float:left;
+				height: 23px;
+				width: 23px;
+				margin-left:20px;
+				position:absolute;
+				left: 0;
+				top: 50%;
+				transform:translate(0,-50%);
+			}
+			span{
+				position:absolute;
+				left: 50%;
+				top: 50%;
+				transform:translate(-50%,-50%);
+			}
+		}
+		.new{
+			height: 50px;
+			border-bottom:1px solid #e8e4e3;
+			line-height:50px;
+			font-size:16px;
+			padding:0 10px;
+			a{
+				color:#000;
+			}
+			em{
+				background-color: #fb6652;
+	    		border-radius: 2px;
+	    		color:#fff;
+			}
+		}
+}
