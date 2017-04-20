@@ -329,6 +329,8 @@
 						}
 						img{
 							float:left;
+							height:22px;	
+							width:22px;	
 							margin-right:10px;
 						}
 					}
