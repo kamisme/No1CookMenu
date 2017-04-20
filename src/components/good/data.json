@@ -1,0 +1,428 @@
+{
+  "goods": [
+    {
+      "name": "实用分类",
+      "type": -1,
+      "foods": [
+        {
+          "name": "快手菜",
+          "src":"src/components/good/images/m1(1).png"
+        },
+        {
+          "name": "下饭菜",
+          "src":"src/components/good/images/m1(2).png"
+        },
+        {
+          "name": "应季时蔬",
+          "src":"src/components/good/images/m1(3).png"
+        },
+        {
+          "name": "素食",
+          "src":"src/components/good/images/m1(4).png"
+        },
+        {
+          "name": "肉食",
+          "src":"src/components/good/images/m1(5).png"
+        },
+        {
+          "name": "汤",
+          "src":"src/components/good/images/m1(6).png"
+        }]
+
+    },       
+    {
+      "name": "每日三餐",
+      "type": 2,
+      "foods": [
+        {
+          "name": "早餐",
+          "src":"src/components/good/images/m2(1).png"
+        },
+         {
+          "name": "午餐",
+          "src":"src/components/good/images/m2(2).png"
+        },
+         {
+          "name": "下午茶",
+          "src":"src/components/good/images/m2(3).png"
+        },
+         {
+          "name": "晚餐",
+          "src":"src/components/good/images/m2(4).png"
+        },
+         {
+          "name": "夜宵",
+          "src":"src/components/good/images/m2(5).png"
+        }]
+      
+    },
+    {
+      "name": "主食",
+      "type": -1,
+      "foods": [
+        {
+          "name": "炒饭",
+          "src":"src/components/good/images/m3(1).png"
+        },
+          {
+          "name": "焖饭",
+          "src":"src/components/good/images/m3(2).png"
+        },
+          {
+          "name": "烩饭",
+          "src":"src/components/good/images/m3(3).png"
+        },
+          {
+          "name": "饭",
+          "src":"src/components/good/images/m3(4).png"
+        },
+          {
+          "name": "方便面",
+          "src":"src/components/good/images/m3(5).png"
+        },
+          {
+          "name": "烩面",
+          "src":"src/components/good/images/m3(6).png"
+        },
+          {
+          "name": "拌面",
+          "src":"src/components/good/images/m3(7).png"
+        },
+          {
+          "name": "面",
+          "src":"src/components/good/images/m3(8).png"
+        },
+          {
+          "name": "饼",
+          "src":"src/components/good/images/m3(9).png"
+        },
+          {
+          "name": "包子",
+          "src":"src/components/good/images/m3(10).png"
+        },
+          {
+          "name": "饺子",
+          "src":"src/components/good/images/m3(11).png"
+        }]
+    },
+    {
+      "name": "家常菜谱",
+      "type": -1,
+      "foods": [
+        {
+          "name": "热菜",
+          "src":"src/components/good/images/m4(2).png"
+        },
+        {
+          "name": "凉菜",
+          "src":"src/components/good/images/m4(3).png"
+        },
+        {
+          "name": "素菜",
+          "src":"src/components/good/images/m4(4).png"
+        },
+        {
+          "name": "靓汤",
+          "src":"src/components/good/images/m4(5).png"
+        },
+        {
+          "name": "粥品",
+          "src":"src/components/good/images/m4(6).png"
+        },
+        {
+          "name": "主食",
+          "src":"src/components/good/images/m4(7).png"
+        },
+        {
+          "name": "点心",
+          "src":"src/components/good/images/m4(8).png"
+        },
+        {
+          "name": "卤味",
+          "src":"src/components/good/images/m4(9).png"
+        },
+        {
+          "name": "微波炉",
+          "src":"src/components/good/images/m.png"
+        },
+        {
+          "name": "海鲜",
+          "src":"src/components/good/images/m4(11).png"
+        },
+        {
+          "name": "火锅",
+          "src":"src/components/good/images/m4(12).png"
+        },
+        {
+          "name": "酱料",
+          "src":"src/components/good/images/m4(13).png"
+        },
+        {
+          "name": "苹果",
+          "src":"src/components/good/images/m4(14).png"
+        },
+        {
+          "name": "零食",
+          "src":"src/components/good/images/m4(15).png"
+        },
+        {
+          "name": "孕妇",
+          "src":"src/components/good/images/m4(16).png"
+        },
+        {
+          "name": "产妇",
+          "src":"src/components/good/images/m4(17).png"
+        },
+        {
+          "name": "宝宝",
+          "src":"src/components/good/images/m4(18).png"
+        },
+        {
+          "name": "老人",
+          "src":"src/components/good/images/m4(19).png"
+        },
+        {
+          "name": "美容",
+          "src":"src/components/good/images/m4(20).png"
+        },
+        {
+          "name": "瘦身",
+          "src":"src/components/good/images/m4(1).png"
+        }]
+    },
+    {
+      "name": "中华菜系",
+      "type": -1,
+      "foods": [
+         {
+          "name": "川菜",
+          "src":"src/components/good/images/m5(7).png"
+          
+        },
+         {
+          "name": "卤菜",
+          "src":"src/components/good/images/m5(8).png"
+          
+        },
+         {
+          "name": "粤菜",
+          "src":"src/components/good/images/m5(9).png"
+          
+        },
+         {
+          "name": "湘菜",
+          "src":"src/components/good/images/m5(10).png"
+          
+        },
+         {
+          "name": "闽菜",
+          "src":"src/components/good/images/m5(11).png"
+          
+        },
+        {
+          "name": "浙江菜",
+          "src":"src/components/good/images/m5(12).png"
+          
+        },
+        {
+          "name": "苏菜",
+          "src":"src/components/good/images/m5(13).png"
+          
+        },
+        {
+          "name": "徽菜",
+          "src":"src/components/good/images/m5(14).png"
+          
+        },
+        {
+          "name": "京菜",
+          "src":"src/components/good/images/m5(15).png"
+          
+        },
+        {
+          "name": "沪菜",
+          "src":"src/components/good/images/m5(16).png"
+          
+        },
+        {
+          "name": "豫菜",
+          "src":"src/components/good/images/m5(17).png"
+          
+        },
+        {
+          "name": "湖北菜",
+          "src":"src/components/good/images/m5(18).png"
+          
+        },
+        {
+          "name": "东北菜",
+          "src":"src/components/good/images/m5(19).png"
+          
+        },
+        {
+          "name": "西北菜",
+          "src":"src/components/good/images/m5(20).png"
+          
+        },
+        {
+          "name": "云贵菜",
+          "src":"src/components/good/images/m5(21).png"
+          
+        },
+        {
+          "name": "清真菜",
+          "src":"src/components/good/images/m5(22).png"
+          
+        },
+        {
+          "name": "山西菜",
+          "src":"src/components/good/images/m5(23).png"
+          
+        },
+        {
+          "name": "江西菜",
+          "src":"src/components/good/images/m5(24).png"
+          
+        },
+        {
+          "name": "广西菜",
+          "src":"src/components/good/images/m5(25).png"
+          
+        },
+        {
+          "name": "港台菜",
+          "src":"src/components/good/images/m5(26).png"
+          
+        },
+        {
+          "name": "其它菜",
+          "src":"src/components/good/images/m5(1).png"
+        }]
+  
+    },
+    {
+      "name": "烘焙",
+      "type": -1,
+      "foods": [
+        {
+          "name": "蛋糕面包",
+          "src":"src/components/good/images/m6(3).png"
+        },
+         {
+          "name": "饼干配方",
+          "src":"src/components/good/images/m6(4).png"
+        },
+         {
+          "name": "甜点点心",
+          "src":"src/components/good/images/m6(5).png"
+        },
+         {
+          "name": "蛋糕",
+          "src":"src/components/good/images/m6(6).png"
+        },
+         {
+          "name": "面包",
+          "src":"src/components/good/images/m6(7).png"
+        },
+         {
+          "name": "糖",
+          "src":"src/components/good/images/m6(1).png"
+        },
+         {
+          "name": "蛋糕面包",
+          "src":"src/components/good/images/m6(7).png"
+        } ]
+    },
+    {
+      "name": "食材",
+      "type": -1,
+      "foods": [
+        {
+          "name": "畜类",
+          "src":"src/components/good/images/m7(2).png"
+        }, 
+        {
+          "name": "禽类",
+          "src":"src/components/good/images/m7(3).png"
+        }, 
+        {
+          "name": "水产",
+          "src":"src/components/good/images/m7(4).png"
+        }, 
+        {
+          "name": "蔬菜",
+          "src":"src/components/good/images/m7(5).png"
+        }, 
+        {
+          "name": "菌藻类",
+          "src":"src/components/good/images/m7(6).png"
+        }, {
+          "name": "豆类",
+          "src":"src/components/good/images/m7(7).png"
+        }, 
+        {
+          "name": "五谷",
+          "src":"src/components/good/images/m7(8).png"
+        }, 
+        {
+          "name": "水果",
+          "src":"src/components/good/images/m7(1).png"
+        }]
+      
+    },
+    {
+      "name": "人群",
+      "type": -1,
+      "foods": [
+        {
+          "name": "孕妇",
+          "src":"src/components/good/images/m8(2).png"
+        },
+         {
+          "name": "产妇",
+          "src":"src/components/good/images/m8(3).png"
+        },
+         {
+          "name": "幼儿",
+          "src":"src/components/good/images/m8(4).png"
+        },
+         {
+          "name": "哺乳期",
+          "src":"src/components/good/images/m8(5).png"
+        },
+         {
+          "name": "婴儿",
+          "src":"src/components/good/images/m8(6).png"
+        },
+         {
+          "name": "老人",
+          "src":"src/components/good/images/m8(7).png"
+        },
+         {
+          "name": "儿童",
+          "src":"src/components/good/images/m8(8).png"
+        },
+         {
+          "name": "小白",
+          "src":"src/components/good/images/m8(9).png"
+        },
+         {
+          "name": "懒人",
+          "src":"src/components/good/images/m8(10).png"
+        },
+         {
+          "name": "青少年",
+          "src":"src/components/good/images/m8(11).png"
+        },
+         {
+          "name": "运动员",
+          "src":"src/components/good/images/m8(12).png"
+        },
+         {
+          "name": "围孕期",
+          "src":"src/components/good/images/m8(13).png"
+        }]
+          
+    }
+  ]
+}

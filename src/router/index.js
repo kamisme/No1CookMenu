@@ -9,7 +9,9 @@ import IndexComponent from '../components/index/IndexComponent.vue'
 import LoginComponent from '../components/login/LoginComponent.vue'
 import FoodDetailComponent from '../components/FoodDetail/FoodDetailComponent.vue'
 import LifeCircleCompoent from '../components/LifeCircle/LifeCircleComponent.vue'
-//import FoodListComponent from '../components/FoodList/FoodListComponent.vue'
+import FoodListComponent from '../components/FoodList/FoodListComponent.vue'
+import FoodsComponent from '../components/foods/FoodClassifyComponent.vue'
+import good from "../components/good/good.vue"
 Vue.use(VueRouter)
 
 //const router = new VueRouter({
@@ -44,6 +46,19 @@ const router = new VueRouter({
     	path:"/LifeCircle",
     	name:"LifeCircle",
     	component:LifeCircleCompoent
+    },{
+    	path:"/FoodList",
+    	name:"FoodList",
+    	component:FoodListComponent
+    },{
+        path:'/good',
+        name:'good',
+        component:good
+
+    },{
+        path:'/foods',
+        name:"foods",
+        component:FoodsComponent
     }]
 })
 

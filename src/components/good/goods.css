@@ -1,0 +1,66 @@
+body{font-size: 14px;}
+html,body,ul,p,h1,h2,h3,input{margin: 0;padding: 0;font-family:Arial,Helvetica,"宋体",sans-serif;color: #333;}
+ul{list-style: none;}
+a {text-decoration: none !important;color: #333;}
+html{width:100%;height:100%;}
+.clear{zoom:1;}
+.clear:after{content: '';display: block;clear: both;}
+.good{
+  display:flex;
+  position:absolute;
+  width:100%;
+  top:65px;
+  bottom:0px;
+  overflow:hidden;
+}
+.top{width:100%;height:60px;background:rgb(245, 41, 13);line-height: 60px;text-align: center;font-size: 25px;color:#fff;}
+.menu-wrapper{
+    background:#fff;}
+ .menu-item{ display:table;
+      width:100px;
+      height:100px;
+      line-height:14px;
+      margin:0px;
+      padding-top: 5px;
+      box-sizing:border-box;
+      text-align: center;
+  		}
+.menu-item p{margin-top:10px;font-size: 14px;}		
+.menu-item img {display:block;width:60px;height:60px;margin-left:20px;}
+.current{
+        position:relative;
+        z-index:10;
+        margin-top:-1px;
+        background:#fff;
+        font-weight: 700;}
+.text{border:none;}
+    
+.title{  width:100%;
+         height :30px;
+        line-height:30px;
+        font-size:16px;
+        font-weight: 600;
+        color:#666;
+        background:#f3f5f7;}
+.foods-wrapper>ul{width:100%;}
+.foods-wrapper>ul>li{width:100%;text-align: center;}
+.foods li{float: left;width:50%;}
+.foods li img{display:block;}
+.food-item{display:flex;
+		  box-sizing: border-box;
+		  margin:0px;
+		  margin-top:18px;
+		  padding:0 10px;
+          padding-bottom:18px;}
+        
+.food-item:last-child{border:none;margin-bottom:0px;}
+.food-item .icon{margin-right:10px;width:100%;}
+.foodimg{display:block;width:100%;}
+.foodimg img{width:100%;}
+.icon .name{margin:8px 0 8px 0;
+            font-size: 14px;
+            line-height: 14px;
+            height: 14px;
+            color:#000;}
+
+         

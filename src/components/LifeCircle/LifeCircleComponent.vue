@@ -2,7 +2,7 @@
 	<div class="LifeCircle">
 
 		<h1 :style="{background:color}" ref="hhh">
-			<img v-lazy="icon" height="68" width="68" alt="">
+			<img v-lazy="icon" height="68" width="68" alt="" @click="toIndex">
 			<span>{{title}}</span>
 		</h1>
 		<div class="new">
@@ -130,6 +130,11 @@
 			// this.lazyload();
 			// console.log($("div"));
 			window.addEventListener("scroll",this.lazyload)
+		},
+		methods: {
+			toIndex: function(){
+				this.$router.push({path: '/'})
+			}
 		}
 	}
 

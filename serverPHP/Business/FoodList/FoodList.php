@@ -7,7 +7,7 @@ header('Access-Control-Allow-Origin:*');
 $host = 'localhost';
 $user = 'root';
 $password='';
-$database='number1';
+$database='no1cookmenu';
 $tablename='menulist';
 
 class Goods{

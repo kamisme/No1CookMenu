@@ -20,10 +20,10 @@
 					<img src="../../images/index/search-img.png"/>
 				</div>
 				<div class="nav-row">
-					<a class="nav-item caipu" href="javascript:;">菜谱分类</a>
+					<a class="nav-item caipu" href="javascript:;" @click="toGood">菜谱分类</a>
 					<a class="nav-item shipin" href="javascript:;">视频</a>
-					<a class="nav-item health" href="javascript:;">健康养生</a>
-					<a class="nav-item quan" href="javascript:;" @click="toLifeCircle()">生活圈</a>
+					<a class="nav-item health" href="javascript:;" @click="toGood">健康养生</a>
+					<a class="nav-item quan" href="javascript:;" @click="toLifeCircle">生活圈</a>
 				</div>
 				<ul class="sancan new-home-pad clear" @click="toFoodList()">
 					<li class="xh-sancan fl">
@@ -198,6 +198,9 @@
             },
           	toFoodList: function(){
           		this.$router.push({path:'/FoodList'})
+          	},
+          	toGood: function(){
+          		this.$router.push({path:'/good'})
           	}
 		}
 	}
