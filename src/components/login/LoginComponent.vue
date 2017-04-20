@@ -31,7 +31,7 @@
 		name: 'home',
 		data: function(){
 			return {
-				name: 'Tom',
+//				name: 'Tom',
 				pwd: 123456
 			}
 		},

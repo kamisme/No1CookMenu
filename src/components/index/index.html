@@ -1,12 +1,20 @@
-<template>
-	<div>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--<meta name="viewport" content="width=320, user-scalable=no">-->
+		<title>香哈菜谱</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
 		<div class="index-header">
 			<div class="home-title">
-				<!--<a href="#">
+				<a href="#">
 					<div class="home-back">
 						<img src="../../images/index/index.png"/>
 					</div>
-				</a>-->
+				</a>
 				<a href="#">
 					<div class="home-recipe">
 						<p>66菜谱</p>
@@ -105,20 +113,20 @@
 					</a>
 				</ul>
 				<ul class="xh-dish-list">
-					<li class="xh-dish new-home-pad" v-for="(list,index) in lists">
+					<li class="xh-dish new-home-pad">
 						<a href="#" class="dis_block">
-							<img class="dish-img" :src="list.foodImg" alt="" />
+							<img class="dish-img" src="../../images/index/food1.jpg" alt="" />
 							<div class="dish-des">
-								<h3 class="dish-title">{{list.foodName}}</h3>
-								<h4 class="dish-con">{{list.foodDescribe}}</h4>
+								<h3 class="dish-title">绣球酥</h3>
+								<h4 class="dish-con">喜欢尝试做各种美食，从中得到乐趣！</h4>
 								<p>
-									<span>{{list.foodTime}}</span>
+									<span>昨天</span>
 								</p>
 								<div class="dish-author">
 									<div class="author-avatar clear">
-										<img :src="list.foodUserIcon"/>
+										<img src="../../images/index/touxiang1.jpg"/>
 									</div>
-									<h4 class="right">{{list.foodUserName}}</h4>
+									<h4 class="right">小晓的香饽饽</h4>
 								</div>
 							</div>
 						</a>
@@ -126,55 +134,13 @@
 				</ul>
 			</section>
 		</div>
-		<a class="to-new-top" @click="toTop()" href="#">
-			<img src="../../images/index/top.png" />
+		<a href="#">
+			<img class="to-new-top" src="../../images/index/top.png" />
 		</a>
-	</div>
-	
-</template>
-
-<script type="text/javascript">
-//	import './css/index.css'
-	import './js/rem.js'
-	import $ from 'jquery'
-	
-	export default {
-		data: function(){
-			return{
-				lists: [],
-				top: $(document).scrollTop()
-			}
-		},
-		created: function(){
-			var that = this;
-			$.ajax({
-				type: "GET",
-				url: "http://localhost/Vue/No1CookMenu/serverPHP/Business/index/index.php",
-				success: function(res){
-					that.lists = JSON.parse(res);
-					console.log( that.lists )
-				}
-			})
-		},
-		methods:{
-			toTop: function(){
-				$('body,html').animate({ scrollTop: 0 }, 200)
-				console.log( $(window).height(), $(document).scrollTop() )
-				return false
-			}
-		},
-		watch: {
-			top: function (newVal, oldVal) {
-			  console.log(newVal, oldVal)
-			}
-//			if( $(document).scrollTop() > $(window).height() ){
-//				$(.to-new-top).css('display', 'none')
-//				console.log(111111)
-//			}
-		}
-	}
-</script>
-
-<style lang="css">
-	@import url("./css/index.css");
-</style>
+		
+		<script type="text/javascript" src="js/rem.js"></script>
+		<!--<script type="text/javascript">
+			document.documentElement.style.fontSize = "108px";
+		</script>-->
+	</body>
+</html>

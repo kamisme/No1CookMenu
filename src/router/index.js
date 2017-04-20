@@ -3,20 +3,32 @@ import VueRouter from 'vue-router'
 import http from '../utils/HttpClient'
 
 // import HomeComponent from '../components/home/HomeComponent.vue'
-import LoginComponent from '../components/login/LoginComponent.vue'
-import FoodDetailComponent from '../components/FoodDetail/FoodDetailComponent.vue'
+//import LoginComponent from '../components/login/LoginComponent.vue'
+//import FoodDetailComponent from '../components/FoodDetail/FoodDetailComponent.vue'
+import IndexComponent from '../components/index/IndexComponent.vue'
 Vue.use(VueRouter)
 
+//const router = new VueRouter({
+//	routes: [{
+//		path: '/login',
+//		name: 'login',
+//		component: LoginComponent
+//	},{
+//      path:'/FoodDetail',
+//      name:'FoodDetail',
+//      component:FoodDetailComponent
+//  },{
+//  	path:"/index",
+//  	name:"index",
+//  	component:IndexCompoent
+//  }]
+//})
 const router = new VueRouter({
 	routes: [{
-		path: '/login',
-		name: 'login',
-		component: LoginComponent
-	},{
-        path:'/FoodDetail',
-        name:'FoodDetail',
-        component:FoodDetailComponent
-    }]
+		path: '/',
+		name: 'index',
+		component: IndexComponent
+	}]
 })
 
 //对将要进入的路由进行权判断

@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<!--<style lang="css">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -42,4 +42,4 @@ li {
 a {
   color: #42b983;
 }
-</style>
+</style>-->
