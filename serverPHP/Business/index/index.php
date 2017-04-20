@@ -13,7 +13,8 @@
 	
 	$con = new mysqli('127.0.0.1','root','','no1cookmenu');
 	$con -> query("set names utf8");
-	$sql = 'select * from indexFood';
+	
+	$sql = 'select * from indexFood limit 0,5';
 	$res = $con -> query($sql);
 	$arr = array();
 	if($res->num_rows > 0){

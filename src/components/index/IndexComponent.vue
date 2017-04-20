@@ -2,12 +2,12 @@
 	<div>
 		<div class="index-header">
 			<div class="home-title">
-				<!--<a href="#">
+				<!--<a href="javascript:;">
 					<div class="home-back">
 						<img src="../../images/index/index.png"/>
 					</div>
 				</a>-->
-				<a href="#">
+				<a href="javascript:;">
 					<div class="home-recipe">
 						<p>66菜谱</p>
 					</div>
@@ -20,26 +20,26 @@
 					<img src="../../images/index/search-img.png"/>
 				</div>
 				<div class="nav-row">
-					<a class="nav-item caipu" href="#">菜谱分类</a>
-					<a class="nav-item shipin" href="#">视频</a>
-					<a class="nav-item health" href="#">健康养生</a>
-					<a class="nav-item quan" href="#">生活圈</a>
+					<a class="nav-item caipu" href="javascript:;">菜谱分类</a>
+					<a class="nav-item shipin" href="javascript:;">视频</a>
+					<a class="nav-item health" href="javascript:;">健康养生</a>
+					<a class="nav-item quan" href="javascript:;">生活圈</a>
 				</div>
 				<ul class="sancan new-home-pad clear">
 					<li class="xh-sancan fl">
-						<a href="#" class="dis_block">
+						<a href="javascript:;" class="dis_block">
 							<img src="../../images/index/zaocan.jpg" alt="" />
 							<h3>早餐</h3>
 						</a>
 					</li>
 					<li class="xh-sancan fl">
-						<a href="#" class="dis_block">
+						<a href="javascript:;" class="dis_block">
 							<img src="../../images/index/wucan.jpg" alt="" />
 							<h3>中餐</h3>
 						</a>
 					</li>
 					<li class="xh-sancan fl">
-						<a href="#" class="dis_block">
+						<a href="javascript:;" class="dis_block">
 							<img src="../../images/index/wancan.jpg" alt="" />
 							<h3>晚餐</h3>
 						</a>
@@ -49,7 +49,7 @@
 			<section class="con-block write-bg">
 				<ul>
 					<li class="topic-rec new-home-pad">
-						<a href="#" class="dis_block">
+						<a href="javascript:;" class="dis_block">
 							<img src="../../images/index/luobosi.jpg"/>
 							<div class="topic-text">
 								<h2>惊艳味蕾的胡萝卜</h2>
@@ -58,7 +58,7 @@
 						</a>
 					</li>
 					<li class="topic-rec new-home-pad">
-						<a href="#" class="dis_block">
+						<a href="javascript:;" class="dis_block">
 							<img src="../../images/index/shuiguo.jpg"/>
 							<div class="topic-text">
 								<h2>N法征服水果界网红</h2>
@@ -68,7 +68,7 @@
 					</li>
 				</ul>
 				<div class="video-dish new-home-pad">
-					<a href="#">
+					<a href="javascript:;">
 						<div class="dish-img">
 							<img src="../../images/index/zhengyu.jpg"/>
 							<img class="videoIcon" src="../../images/index/videoIcon.png"/>
@@ -89,14 +89,14 @@
 					</a>
 				</div>
 				<ul class="xh-nous">
-					<a href="#" class="dis_block">
+					<a href="javascript:;" class="dis_block">
 						<li class="nous new-home-pad">
 							<h3 class="nous-title" style="padding-bottom:.1rem;">最正宗可乐鸡翅的做法，你知道吗</h3>
 							<p class="nous-con clearfix">可乐鸡翅是中国人餐桌上一道家常菜，味道鲜美，色泽艳丽，鸡翅嫩滑，又保留了可乐的香气，其做法有“简单到没下过厨也会做”之称，深受大众喜爱。今天小编为大家奉上做正宗可乐鸡翅的秘诀，...</p>
 							<div class="nous-img" style="border-radius: 3px; max-height: 1.7rem; overflow:hidden"><img src="../../images/index/kelejichi.jpg"></div>
 						</li>
 					</a>
-					<a href="#" class="dis_block">
+					<a href="javascript:;" class="dis_block">
 						<li class="nous new-home-pad">
 							<h3 class="nous-title" style="padding-bottom:.1rem;">这道菜让南方人流口水北方人皱眉</h3>
 							<p class="nous-con clearfix">北方的粽子都是甜的，而且一般只在端午节吃，所以作为北方人的小编第一次见到肉粽子内心是拒绝的，加上听说很多南方人每天早餐是肉粽子更是震惊。然而一次偶然去南方出差，小编吃到了今天给...</p>
@@ -106,7 +106,7 @@
 				</ul>
 				<ul class="xh-dish-list">
 					<li class="xh-dish new-home-pad" v-for="(list,index) in lists">
-						<a href="#" class="dis_block">
+						<a href="javascript:;" class="dis_block">
 							<img class="dish-img" :src="list.foodImg" alt="" />
 							<div class="dish-des">
 								<h3 class="dish-title">{{list.foodName}}</h3>
@@ -126,7 +126,7 @@
 				</ul>
 			</section>
 		</div>
-		<a class="to-new-top" @click="toTop()" href="#">
+		<a class="to-new-top" @click="toTop()" href="javascript:;">
 			<img src="../../images/index/top.png" />
 		</a>
 	</div>
@@ -141,7 +141,8 @@
 	export default {
 		data: function(){
 			return{
-				lists: []
+				lists: [],
+				show:5
 			}
 		},
 		created: function(){
@@ -149,16 +150,45 @@
 			$.ajax({
 				type: "GET",
 				url: "http://localhost/Vue/No1CookMenu/serverPHP/Business/index/index.php",
+//				data:{show:5},
 				success: function(res){
 					that.lists = JSON.parse(res);
+//					console.log( res )
 					console.log( that.lists )
 				}
+			});
+			$(window).scroll(function(){
+				if( $(document).scrollTop() > 1000 ){
+					$(".to-new-top").css("display","block");
+				}else{
+					$(".to-new-top").css("display","none");
+				}
+			});
+			$(window).scroll(function () {
+                let scrollTop = $(this).scrollTop()
+                let scrollHeight = $(document).height()
+                let windowHeight = $(this).height()
+                if (scrollTop + windowHeight === scrollHeight){
+//              	that.show += 5;
+                    console.log(111)
+                    $.ajax({
+                        url:'http://localhost/Vue/No1CookMenu/serverPHP/Business/index/index.php',
+                        type:'GET'
+//                      data:{show:that.show}
+                    })
+                    .done(function(res){
+                    	let data = JSON.parse(res);
+                    	data.forEach(function(value,index){
+                    		that.lists.push(value)
+                    	})
+                    })
+                }
 			})
 		},
 		methods:{
 			toTop: function(){
-				$('body,html').animate({ scrollTop: 0 }, 200)
-				console.log( $(window).height(), $(document).scrollTop() )
+				$('body,html').animate({ scrollTop: 0 }, 300)
+				console.log( $('.caipu').attr('href') )
 				return false
 			}
 		}
