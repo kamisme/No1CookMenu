@@ -147,7 +147,6 @@
 						<img src="src/images/FoodDetail/hstdjc(11).webp" alt="">
 					</div>
 				</li>
-				<li class="cook-step">
 				<div class="loadmore">
 				    <em></em>
 					<span>点击展开全部</span>
@@ -163,50 +162,6 @@
 				<a href="" class="save-btn">把做法保存到手机</a>
 			</div>
 		</div>
-<!-- 		<div class="other-method sides-pd">
-			<h3 class="om-title sm-title">- 其他做法 -</h3>
-			<ul class="om-list">
-				<li>
-					<div>
-						<img src="src/images/FoodDetail/hsjc.webp">
-						<p>红烧鸡翅</p>
-					</div>
-				</li>
-				<li>
-					<div>
-						<img src="src/images/FoodDetail/hsjc.webp">
-						<p>红烧鸡翅</p>
-					</div>
-				</li>
-				<li>
-					<div>
-						<img src="src/images/FoodDetail/hsjc.webp">
-						<p>红烧鸡翅</p>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<div class="relevant sides-pd">
-			<h3 class="rev-title sm-title">- 相关分类 -</h3>
-			<ul class="rev-list">
-			    <li>农家菜</li>
-			    <li>羊肉</li>
-			    <li>素菜</li>
-			    <li>家常菜</li>
-			</ul>
-		</div>
-		<div class="hot-link sides-pd">
-			<h3 class="hl-title sm-title">- 热门推荐 -</h3>
-			<ul class="hl-list">
-			    <li>
-			    	<div class="hl-img"><img src="src/images/FoodDetail/tclj.webp" alt=""></div>
-			    	<div class="hl-font">
-			    		<h4>酸甜可口的糖醋里脊就这么简单！</h4>
-			    		<p><span>7954</span>浏览</p>
-			    	</div>
-			    </li>
-			</ul>
-		</div> -->
 	</div>
 </template>
 <script>
