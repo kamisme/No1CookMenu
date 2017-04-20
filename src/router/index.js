@@ -2,10 +2,13 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import http from '../utils/HttpClient'
 
-// import HomeComponent from '../components/home/HomeComponent.vue'
+// import HomeComponent from '../components/home/HomeComponent.vue'<<<<<<< HEAD
 //import LoginComponent from '../components/login/LoginComponent.vue'
 //import FoodDetailComponent from '../components/FoodDetail/FoodDetailComponent.vue'
 import IndexComponent from '../components/index/IndexComponent.vue'
+import LoginComponent from '../components/login/LoginComponent.vue'
+import FoodDetailComponent from '../components/FoodDetail/FoodDetailComponent.vue'
+import LifeCircleCompoent from '../components/LifeCircle/LifeCircleComponent.vue'
 Vue.use(VueRouter)
 
 //const router = new VueRouter({
@@ -28,7 +31,19 @@ const router = new VueRouter({
 		path: '/',
 		name: 'index',
 		component: IndexComponent
-	}]
+	},{
+		path: '/login',
+		name: 'login',
+		component: LoginComponent
+	},{
+        path:'/FoodDetail',
+        name:'FoodDetail',
+        component:FoodDetailComponent
+    },{
+    	path:"/LifeCircle",
+    	name:"LifeCircle",
+    	component:LifeCircleCompoent
+    }]
 })
 
 //对将要进入的路由进行权判断

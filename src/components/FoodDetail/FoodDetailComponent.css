@@ -1,0 +1,210 @@
+html{
+    font-size: 100px;
+}
+body{
+    background: #f7f7f7;
+}
+h1,h2,h3,h4,h5,h6,a,img,ul,li,div,p,input{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.pg-contain{
+    text-align: left;
+}
+.sides-pd{
+    padding-left: .16rem;
+    padding-right: .16rem;
+    background: #fff;
+    margin-bottom: .1rem;
+    width: 100%;
+}
+.sm-title{
+    text-align: center;
+    font-size: .2rem;
+    padding: .24rem 0 .15rem;
+    position: relative;
+    font-weight: 700;
+    color: #000;
+}
+/*页面头部*/
+#header{
+    width: 100%;
+    background: #f5290d;
+    color:#fff;
+    height: 0.5rem;
+    text-align: center;
+}
+#header .main-title{
+    width: 100%;
+    height: 100%;
+}
+#header h1{
+    font-size: 0.22rem;
+    margin-right:0.8rem;
+    line-height:0.5rem;
+}
+#header a{
+    display: block;
+    float: left;
+    margin-left:0.2rem;
+    margin-top: 0.15rem;
+}
+#header img{
+    width: 0.18rem;
+    height: 0.18rem;
+}
+/*菜品图*/
+.dish-img,.dish-img a img{
+    width: 100%;
+}
+/*菜品介绍*/
+.dish-title{
+    text-align: center;
+    line-height: .27rem;
+    padding-top: .22rem;
+    padding-bottom: .13rem;
+    font-size: .26rem;
+    font-weight: bold;
+    color: #000;
+}
+.dish-browse{
+    font-size: .14rem;
+    color: #999;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: .2rem;
+}
+.btn-box{
+    padding-bottom: .18rem;
+}
+.clt-btn{
+    display: block;
+    font-size: .16rem;
+    width: 40%;
+    letter-spacing: 1px;
+    color: #fff;
+    line-height: .39rem;
+    background-color: #ff533c;
+    margin: 0 auto;
+    text-indent: 15%;
+    background: #ff533c url(/src/images/FoodDetail/xin.png) no-repeat 24% 50%;
+    background-size: .15rem auto;
+    border-radius: 3px;
+}
+.clt-btn:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.dish-intro{
+    text-indent: .32rem;
+    font-size: .16rem;
+    color: #525252;
+    line-height: 1.45;
+    padding-bottom: .23rem;
+    -webkit-tap-highlight-color: rgba(255,0,0,0);
+}
+/*用料*/
+.ing-list li{
+    border-bottom: 1px solid #f4f4f4;
+    padding-top: .105rem;
+    padding-bottom: .105rem;
+    font-size: .15rem;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.ing-list li span{
+    display: block;
+    box-sizing: border-box;
+    text-indent: 13%;
+}
+.ing-left{
+    width: 60%;
+}
+.ing-right{
+    width: 40%;
+}
+.cook-list p{
+    padding-bottom: .12rem;
+    font-size: .16rem;
+    line-height: 1.5;
+}
+.cook-step{
+    padding-bottom: .28rem;
+}
+.cook-list p .index{
+    font-weight: 600;
+    font-size: .20rem;
+    margin-right: .1rem;
+}
+.step-img{
+    overflow: hidden;
+}
+.step-img img{
+    width: 90%;
+    float: right;
+    margin-right:.1rem;
+}
+.save-btn{
+    width: 95%;
+    margin: 0 auto;
+    display: block;
+    height: .4rem;
+    line-height: .4rem;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    font-size: .14rem;
+    text-indent: .22rem;
+    background: #ff533c;
+        background: #ff533c url(/src/images/FoodDetail/phone_w.png) no-repeat 30.5% 49%;
+    background-size: .12rem .16rem;
+}
+.save-btn:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.tips{
+    color: #000;
+    font-size: .16rem;
+    line-height: 1.4;
+    line-height: .22rem;
+}
+.author{
+    font-size: .16rem;
+    color: #000;
+    margin-top: .1rem;
+    margin-bottom: .15rem;
+    line-height: .3rem;
+}
+.author .bold{
+    font-weight: bold;
+}
+.loadmore{
+    margin: 0;
+    padding-bottom: .15rem;
+    font-size: .13rem;
+    height: 0.25rem;
+    line-height: 0.25rem;
+    text-align: center;
+    color: #a4a4a4;
+    background: #eee;
+    position: relative;
+}
+.loadmore em{
+    display: block;
+    position: absolute;
+    top: .03rem;
+    left: 32%;
+    width: .18rem;
+    height: .18rem;
+    background: url(/src/images/FoodDetail/more-down.png) no-repeat;
+    background-size: .18rem .18rem;
+}

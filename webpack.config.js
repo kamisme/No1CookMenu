@@ -60,7 +60,14 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    noInfo: true
+    noInfo: true,
+    // inline:true,
+    // proxy:{
+    //   '/LifeCircle':{
+    //     target:"http:localhost/dk/project/No1CookMenu/serverPHP/Business/LifeCircle/LifeCircle.php",
+    //     secure:false
+    //   }
+    // }
   },
   performance: {
     hints: false

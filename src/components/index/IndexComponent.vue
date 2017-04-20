@@ -141,8 +141,7 @@
 	export default {
 		data: function(){
 			return{
-				lists: [],
-				top: $(document).scrollTop()
+				lists: []
 			}
 		},
 		created: function(){
@@ -162,15 +161,6 @@
 				console.log( $(window).height(), $(document).scrollTop() )
 				return false
 			}
-		},
-		watch: {
-			top: function (newVal, oldVal) {
-			  console.log(newVal, oldVal)
-			}
-//			if( $(document).scrollTop() > $(window).height() ){
-//				$(.to-new-top).css('display', 'none')
-//				console.log(111111)
-//			}
 		}
 	}
 </script>

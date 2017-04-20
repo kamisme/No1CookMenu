@@ -47,10 +47,3 @@
 		}
 	}
 </script>
-
-<style lang="scss">
-	.loginContent{
-		width: 400px;
-		margin: auto;
-	}
-</style>

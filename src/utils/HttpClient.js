@@ -16,7 +16,7 @@ function getUrl(path) {
 }
 
 const HttpClient = {
-
+    //get:function(path,query){return new Promise(function(resolve,reject){})
     get: (path, query) => new Promise((resolve, reject) => {
         var req = request
             .get(getUrl(path))
@@ -31,7 +31,7 @@ const HttpClient = {
             .end((err, res) => {
                 if (err) {
                     reject(err);
-                } else {x
+                } else {
                     resolve(res.body);
                 }
             });
