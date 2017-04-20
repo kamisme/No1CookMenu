@@ -11,7 +11,7 @@ import store from "./components/LifeCircle/store/LifeCircleStore.js"
 import VueLazyload from 'vue-lazyload'
 
 Vue.use(VueLazyload,{
-	loading:"../dist/loading.gif",
+	loading:"./src/images/LifeCircle/loading.gif",
 	try:3
 })
 

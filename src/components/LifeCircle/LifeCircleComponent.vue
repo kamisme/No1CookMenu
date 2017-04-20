@@ -2,7 +2,7 @@
 	<div class="LifeCircle">
 
 		<h1 :style="{background:color}" ref="hhh">
-			<img src="../../images/LifeCircle/index.png" height="68" width="68" alt="">
+			<img v-lazy="icon" height="68" width="68" alt="">
 			<span>{{title}}</span>
 		</h1>
 		<div class="new">
@@ -31,11 +31,11 @@
 				    </div>
 					<div class="right">
 						<div class="com">
-							<img src="../../images/LifeCircle/message.png" height="22" width="22" alt="">
+							<img v-lazy="commit" height="22" width="22" alt="">
 							<span>{{item.comment}}</span>
 						</div>
 						<div class="good">
-							<img src="../../images/LifeCircle/good.png" height="22" width="22" alt="">
+							<img v-lazy="good" height="22" width="22" alt="">
 							<span>{{item.good}}</span>
 						</div>
 					</div>
@@ -43,7 +43,7 @@
 			</li>
 		</ul>
 		<div class="loading">
-			<img src="../../images/LifeCircle/loading.gif" height="50" width="50" alt="">
+			<img :src="loading" height="50" width="50" alt="">
 		</div>
 	</div>
 	
@@ -52,7 +52,7 @@
 <script>
 	//引进常量
 	// import {color} from "../../constant/constant.js";
-	var {color} = require("../../constant/constant.js")
+	var {color,api} = require("../../constant/constant.js")
 
 	var $ = require("jquery");
 	// import $ from "jquery";
@@ -82,7 +82,11 @@
 		computed:mapGetters({
 			allData:"allData",
 			title:"title",
-			news:"new"
+			news:"new",
+			icon:"icon",
+			good:"good",
+			commit:"commit",
+			loading:"loading"
 		}),
 		methods:mapActions({
 			lazyload:"lazyload",
