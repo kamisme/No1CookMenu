@@ -1,8 +1,12 @@
 var path = require('path')
 var webpack = require('webpack')
 
+
 module.exports = {
-  entry: './src/app.js',
+  entry: {
+    app:['./src/app.js'],
+    vendors:["jquery"]
+  },
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
@@ -72,7 +76,14 @@ module.exports = {
   performance: {
     hints: false
   },
-  devtool: '#eval-source-map'
+  devtool: '#eval-source-map',
+  plugins:[
+    new webpack.optimize.CommonsChunkPlugin({
+      name:"vendors",
+      filename:"common.js",
+      minChunks:2
+    })
+  ]
 }
 
 if (process.env.NODE_ENV === 'production') {

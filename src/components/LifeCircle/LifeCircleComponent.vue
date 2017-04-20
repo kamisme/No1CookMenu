@@ -54,7 +54,7 @@
 	// import {color} from "../../constant/constant.js";
 	var {color,api} = require("../../constant/constant.js")
 
-	var $ = require("jquery");
+	// var $ = require("jquery");
 	// import $ from "jquery";
 	//引进ajax模块
 	import http from "../../utils/HttpClient.js";
