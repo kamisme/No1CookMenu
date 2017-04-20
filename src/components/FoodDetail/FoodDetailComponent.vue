@@ -75,6 +75,78 @@
 						<img src="src/images/FoodDetail/hstdjc(3).webp" alt="">
 					</div>
 				</li>
+				<li class="cook-step">
+					<p>
+						<span class="index">4.</span>
+						<span class="describe">煮至变色后捞出就可以了</span>
+					</p>
+					<div class="step-img">
+						<img src="src/images/FoodDetail/hstdjc(4).webp" alt="">
+					</div>
+				</li>
+				<li class="cook-step">
+					<p>
+						<span class="index">5.</span>
+						<span class="describe">土豆削皮切小块待用</span>
+					</p>
+					<div class="step-img">
+						<img src="src/images/FoodDetail/hstdjc(5).webp" alt="">
+					</div>
+				</li>
+				<li class="cook-step">
+					<p>
+						<span class="index">6.</span>
+						<span class="describe">锅中放适量油小火把冰糖熬化</span>
+					</p>
+					<div class="step-img">
+						<img src="src/images/FoodDetail/hstdjc(6).webp" alt="">
+					</div>
+				</li>
+				<li class="cook-step">
+					<p>
+						<span class="index">7.</span>
+						<span class="describe">放入鸡翅翻炒上色，加入姜蒜八角</span>
+					</p>
+					<div class="step-img">
+						<img src="src/images/FoodDetail/hstdjc(7).webp" alt="">
+					</div>
+				</li>
+				<li class="cook-step">
+					<p>
+						<span class="index">8.</span>
+						<span class="describe">加入适量老抽上色炒匀</span>
+					</p>
+					<div class="step-img">
+						<img src="src/images/FoodDetail/hstdjc(8).webp" alt="">
+					</div>
+				</li>
+				<li class="cook-step">
+					<p>
+						<span class="index">9.</span>
+						<span class="describe">加入适量清水与土豆小米椒焖20分钟左右</span>
+					</p>
+					<div class="step-img">
+						<img src="src/images/FoodDetail/hstdjc(9).webp" alt="">
+					</div>
+				</li>
+				<li class="cook-step">
+					<p>
+						<span class="index">10.</span>
+						<span class="describe">加少许盐后大火收汁出锅</span>
+					</p>
+					<div class="step-img">
+						<img src="src/images/FoodDetail/hstdjc(10).webp" alt="">
+					</div>
+				</li>
+				<li class="cook-step">
+					<p>
+						<span class="index">11.</span>
+						<span class="describe">装盘表面撒适量葱花</span>
+					</p>
+					<div class="step-img">
+						<img src="src/images/FoodDetail/hstdjc(11).webp" alt="">
+					</div>
+				</li>
 				<div class="loadmore">
 				    <em></em>
 					<span>点击展开全部</span>
@@ -90,50 +162,6 @@
 				<a href="" class="save-btn">把做法保存到手机</a>
 			</div>
 		</div>
-<!-- 		<div class="other-method sides-pd">
-			<h3 class="om-title sm-title">- 其他做法 -</h3>
-			<ul class="om-list">
-				<li>
-					<div>
-						<img src="src/images/FoodDetail/hsjc.webp">
-						<p>红烧鸡翅</p>
-					</div>
-				</li>
-				<li>
-					<div>
-						<img src="src/images/FoodDetail/hsjc.webp">
-						<p>红烧鸡翅</p>
-					</div>
-				</li>
-				<li>
-					<div>
-						<img src="src/images/FoodDetail/hsjc.webp">
-						<p>红烧鸡翅</p>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<div class="relevant sides-pd">
-			<h3 class="rev-title sm-title">- 相关分类 -</h3>
-			<ul class="rev-list">
-			    <li>农家菜</li>
-			    <li>羊肉</li>
-			    <li>素菜</li>
-			    <li>家常菜</li>
-			</ul>
-		</div>
-		<div class="hot-link sides-pd">
-			<h3 class="hl-title sm-title">- 热门推荐 -</h3>
-			<ul class="hl-list">
-			    <li>
-			    	<div class="hl-img"><img src="src/images/FoodDetail/tclj.webp" alt=""></div>
-			    	<div class="hl-font">
-			    		<h4>酸甜可口的糖醋里脊就这么简单！</h4>
-			    		<p><span>7954</span>浏览</p>
-			    	</div>
-			    </li>
-			</ul>
-		</div> -->
 	</div>
 </template>
 <script>
