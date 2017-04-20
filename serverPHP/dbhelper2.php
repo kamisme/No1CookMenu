@@ -34,14 +34,14 @@
 			if($res->num_rows > 0){
 				//获取到数据
 				while($row = $res->fetch_assoc()){
-					//逐行查询获取,放入结果数组中
+					//逐行查询获取,放row["img2"];
+					// 入结果数组中
 					// $sqldata->id = $row["id"];
 					// $sqldata->title = $row["title"];
 					// $sqldata->new = $row["new"];
 					// $sqldata->name = $row["name"];
 					// $sqldata->img1 = $row["img1"];
-					// $sqldata->img2 = $row["img2"];
-					// $sqldata->img3 = $row["img3"];
+					// $sqldata->img2 = $// $sqldata->img3 = $row["img3"];
 					// $sqldata->text = $row["text"];
 					// $sqldata->username = $row["username"];
 					// $sqldata->comment = $row["comment"];

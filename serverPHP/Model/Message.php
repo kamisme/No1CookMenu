@@ -29,7 +29,6 @@
 		public $id;
 		public $title;
 		public $new;
-		public $data;
 		public $name;
 		public $img1;
 		public $img2;
