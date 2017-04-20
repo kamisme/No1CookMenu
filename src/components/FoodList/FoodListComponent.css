@@ -1,0 +1,88 @@
+.title{
+    background-color: #f5290d;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 27px;
+    text-align: center;
+}
+.title img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.wrap{
+    padding: 0 20px;
+}
+.wrap .title-list{
+    display: flex;
+    justify-content: space-around;
+    line-height: 50px;
+    height: 50px;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+}
+.title-list div{
+    width: 20%;
+}
+.title-list .active{
+    color: red;
+    width: 10%;
+    padding: 14px 0;
+    border-bottom: 1px solid #f5290d;
+}
+.list{
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.list div{
+    width: 100%;
+}
+.list img{
+    width: 100%;
+}
+.list p{
+    color: #333;
+    margin-top: 15px;
+}
+.list .info{
+    margin-top: 10px;
+    color: #848a91;
+}
+.list .dig{
+    margin: 0 5px;
+    color: #000;
+    font-style: 20px;
+}
+.toTop{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+.toTop img{
+    width: 50px;
+    height: 50px;
+}
+.save input{
+    color: #fff;
+    background-color: #fb6652;
+    border-color: #EEE;
+    font-weight: 300;
+    font-size: 16px;
+    font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    line-height: 50px;
+    height: 50px;
+    border-radius: 5%;
+    width: 100%;
+    background-image: url(../../../images/foodList/phone.png);
+    background-repeat: no-repeat;
+    background-position: 34% 15px;
+    background-size: 15px 20px;
+    border: none;
+}

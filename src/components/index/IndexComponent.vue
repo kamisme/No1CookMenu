@@ -9,7 +9,7 @@
 				</a>-->
 				<a href="javascript:;">
 					<div class="home-recipe">
-						<p>66菜谱</p>
+						<p>一号菜谱</p>
 					</div>
 				</a>
 			</div>
@@ -23,9 +23,9 @@
 					<a class="nav-item caipu" href="javascript:;">菜谱分类</a>
 					<a class="nav-item shipin" href="javascript:;">视频</a>
 					<a class="nav-item health" href="javascript:;">健康养生</a>
-					<a class="nav-item quan" href="javascript:;">生活圈</a>
+					<a class="nav-item quan" href="javascript:;" @click="toLifeCircle()">生活圈</a>
 				</div>
-				<ul class="sancan new-home-pad clear">
+				<ul class="sancan new-home-pad clear" @click="toFoodList()">
 					<li class="xh-sancan fl">
 						<a href="javascript:;" class="dis_block">
 							<img src="../../images/index/zaocan.jpg" alt="" />
@@ -190,7 +190,15 @@
 				$('body,html').animate({ scrollTop: 0 }, 300)
 				console.log( $('.caipu').attr('href') )
 				return false
-			}
+			},
+			toLifeCircle: function(){
+                //console.log(this.$route.name)
+//              http://localhost:8080/#/LifeCircle
+                this.$router.push({path:'/LifeCircle'})
+            },
+          	toFoodList: function(){
+          		this.$router.push({path:'/FoodList'})
+          	}
 		}
 	}
 </script>

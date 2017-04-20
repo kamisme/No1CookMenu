@@ -9,6 +9,7 @@ import IndexComponent from '../components/index/IndexComponent.vue'
 import LoginComponent from '../components/login/LoginComponent.vue'
 import FoodDetailComponent from '../components/FoodDetail/FoodDetailComponent.vue'
 import LifeCircleCompoent from '../components/LifeCircle/LifeCircleComponent.vue'
+//import FoodListComponent from '../components/FoodList/FoodListComponent.vue'
 Vue.use(VueRouter)
 
 //const router = new VueRouter({

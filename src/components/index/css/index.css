@@ -47,7 +47,7 @@ body{
 }
 
 .index-header .home-title .home-recipe{
-	width: .825rem;
+	width: 50%;
 	height: .135rem;
 	position: absolute;
 	top: 0;
@@ -55,11 +55,11 @@ body{
 	right: 0;
 	bottom: 0;
 	margin: auto;
-	padding: .06rem .1rem .18rem;
+	padding: .06rem .1rem .25rem;
 }
 
 .index-header .home-title .home-recipe p{
-	font-size: .2037rem;
+	font-size: .18rem;
 	color: #fff;
 	font-weight: 100;
 }
