@@ -75,6 +75,79 @@
 						<img src="src/images/FoodDetail/hstdjc(3).webp" alt="">
 					</div>
 				</li>
+				<li class="cook-step">
+					<p>
+						<span class="index">4.</span>
+						<span class="describe">煮至变色后捞出就可以了</span>
+					</p>
+					<div class="step-img">
+						<img src="src/images/FoodDetail/hstdjc(4).webp" alt="">
+					</div>
+				</li>
+				<li class="cook-step">
+					<p>
+						<span class="index">5.</span>
+						<span class="describe">土豆削皮切小块待用</span>
+					</p>
+					<div class="step-img">
+						<img src="src/images/FoodDetail/hstdjc(5).webp" alt="">
+					</div>
+				</li>
+				<li class="cook-step">
+					<p>
+						<span class="index">6.</span>
+						<span class="describe">锅中放适量油小火把冰糖熬化</span>
+					</p>
+					<div class="step-img">
+						<img src="src/images/FoodDetail/hstdjc(6).webp" alt="">
+					</div>
+				</li>
+				<li class="cook-step">
+					<p>
+						<span class="index">7.</span>
+						<span class="describe">放入鸡翅翻炒上色，加入姜蒜八角</span>
+					</p>
+					<div class="step-img">
+						<img src="src/images/FoodDetail/hstdjc(7).webp" alt="">
+					</div>
+				</li>
+				<li class="cook-step">
+					<p>
+						<span class="index">8.</span>
+						<span class="describe">加入适量老抽上色炒匀</span>
+					</p>
+					<div class="step-img">
+						<img src="src/images/FoodDetail/hstdjc(8).webp" alt="">
+					</div>
+				</li>
+				<li class="cook-step">
+					<p>
+						<span class="index">9.</span>
+						<span class="describe">加入适量清水与土豆小米椒焖20分钟左右</span>
+					</p>
+					<div class="step-img">
+						<img src="src/images/FoodDetail/hstdjc(9).webp" alt="">
+					</div>
+				</li>
+				<li class="cook-step">
+					<p>
+						<span class="index">10.</span>
+						<span class="describe">加少许盐后大火收汁出锅</span>
+					</p>
+					<div class="step-img">
+						<img src="src/images/FoodDetail/hstdjc(10).webp" alt="">
+					</div>
+				</li>
+				<li class="cook-step">
+					<p>
+						<span class="index">11.</span>
+						<span class="describe">装盘表面撒适量葱花</span>
+					</p>
+					<div class="step-img">
+						<img src="src/images/FoodDetail/hstdjc(11).webp" alt="">
+					</div>
+				</li>
+				<li class="cook-step">
 				<div class="loadmore">
 				    <em></em>
 					<span>点击展开全部</span>
