@@ -2,17 +2,23 @@
 	<div class="pg-contain">
 		<div id="header">
 			<div class="main-title">
-				<a href=""><img src="src/components/FoodDetail/images/index.png" alt=""></a>
-				<a href=""><img src="src/components/FoodDetail/images/search.png" alt=""></a>
+				<a href=""><img src="src/images/FoodDetail/index.png" alt=""></a>
+				<a href=""><img src="src/images/FoodDetail/search.png" alt=""></a>
 				<h1>壹号菜谱</h1>
 			</div>
 		</div>
 		<div class="dish-img">
-			<a href=""><img src="src/components/FoodDetail/images/hstdjc.webp" alt=""></a>
+			<a href=""><img src="src/images/FoodDetail/hstdjc.webp" alt=""></a>
 		</div>
 		<div class="summary sides-pd">
 			<h2 class="dish-title">红烧土豆鸡翅</h2>
-			<p class="dish-browse">独家·7459浏览·799做过</p>
+			<p class="dish-browse">
+				独家
+				&bull;
+				7459浏览
+				&bull;
+				799做过
+			</p>
 			<div class="btn-box">
 				<a href="" class="clt-btn">收藏菜谱</a>
 			</div>
@@ -48,7 +54,7 @@
 						<span class="describe">将鸡中翅斩成三段</span>
 					</p>
 					<div class="step-img">
-						<img src="src/components/FoodDetail/images/hstdjc(1).webp" alt="">
+						<img src="src/images/FoodDetail/hstdjc(1).webp" alt="">
 					</div>
 				</li>
 				<li class="cook-step">
@@ -57,7 +63,7 @@
 						<span class="describe">备好所需材料</span>
 					</p>
 					<div class="step-img">
-						<img src="src/components/FoodDetail/images/hstdjc(2).webp" alt="">
+						<img src="src/images/FoodDetail/hstdjc(2).webp" alt="">
 					</div>
 				</li>
 				<li class="cook-step">
@@ -66,7 +72,7 @@
 						<span class="describe">鸡翅冷水入锅，过血水</span>
 					</p>
 					<div class="step-img">
-						<img src="src/components/FoodDetail/images/hstdjc(3).webp" alt="">
+						<img src="src/images/FoodDetail/hstdjc(3).webp" alt="">
 					</div>
 				</li>
 				<div class="loadmore">
@@ -84,24 +90,24 @@
 				<a href="" class="save-btn">把做法保存到手机</a>
 			</div>
 		</div>
-		<div class="other-method sides-pd">
+<!-- 		<div class="other-method sides-pd">
 			<h3 class="om-title sm-title">- 其他做法 -</h3>
 			<ul class="om-list">
 				<li>
 					<div>
-						<img src="src/components/FoodDetail/images/hsjc.webp">
+						<img src="src/images/FoodDetail/hsjc.webp">
 						<p>红烧鸡翅</p>
 					</div>
 				</li>
 				<li>
 					<div>
-						<img src="src/components/FoodDetail/images/hsjc.webp">
+						<img src="src/images/FoodDetail/hsjc.webp">
 						<p>红烧鸡翅</p>
 					</div>
 				</li>
 				<li>
 					<div>
-						<img src="src/components/FoodDetail/images/hsjc.webp">
+						<img src="src/images/FoodDetail/hsjc.webp">
 						<p>红烧鸡翅</p>
 					</div>
 				</li>
@@ -120,14 +126,14 @@
 			<h3 class="hl-title sm-title">- 热门推荐 -</h3>
 			<ul class="hl-list">
 			    <li>
-			    	<div class="hl-img"><img src="src/components/FoodDetail/images/tclj.webp" alt=""></div>
+			    	<div class="hl-img"><img src="src/images/FoodDetail/tclj.webp" alt=""></div>
 			    	<div class="hl-font">
 			    		<h4>酸甜可口的糖醋里脊就这么简单！</h4>
 			    		<p><span>7954</span>浏览</p>
 			    	</div>
 			    </li>
 			</ul>
-		</div>
+		</div> -->
 	</div>
 </template>
 <script>

@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Vuex from "vuex";
 import router from './router/index.js';
-
+//import IndexComponent from './components/index/IndexComponent.vue'
 import App from './App.vue'
 
 // import store from "./components/LifeCircle/vuex/store.js";

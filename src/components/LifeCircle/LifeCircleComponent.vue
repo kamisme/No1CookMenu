@@ -71,7 +71,6 @@
 
 	// import VueLazyload from "vue-lazyload/vue-lazyload-next"
 
-
 	export default{
 		// store,
 		data:function(){

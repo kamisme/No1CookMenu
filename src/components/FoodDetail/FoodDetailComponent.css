@@ -8,6 +8,9 @@ h1,h2,h3,h4,h5,h6,a,img,ul,li,div,p,input{
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+}
 ul li{
     list-style: none;
 }
@@ -50,11 +53,11 @@ ul li{
     display: block;
     float: left;
     margin-left:0.2rem;
-    line-height:  0.5rem;
+    margin-top: 0.15rem;
 }
 #header img{
-    width: 0.2rem;
-    height: 0.2rem;
+    width: 0.18rem;
+    height: 0.18rem;
 }
 /*菜品图*/
 .dish-img,.dish-img a img{
@@ -82,17 +85,21 @@ ul li{
 }
 .clt-btn{
     display: block;
-    color: #fff;
     font-size: .16rem;
     width: 40%;
     letter-spacing: 1px;
+    color: #fff;
     line-height: .39rem;
     background-color: #ff533c;
     margin: 0 auto;
     text-indent: 15%;
-    background: #ff533c url(/src/components/FoodDetail/images/xin.png) no-repeat 24% 50%;
+    background: #ff533c url(/src/images/FoodDetail/xin.png) no-repeat 24% 50%;
     background-size: .15rem auto;
     border-radius: 3px;
+}
+.clt-btn:hover{
+    text-decoration: none;
+    color: #fff;
 }
 .dish-intro{
     text-indent: .32rem;
@@ -157,8 +164,12 @@ ul li{
     font-size: .14rem;
     text-indent: .22rem;
     background: #ff533c;
-        background: #ff533c url(/src/components/FoodDetail/images/phone_w.png) no-repeat 30.5% 49%;
+        background: #ff533c url(/src/images/FoodDetail/phone_w.png) no-repeat 30.5% 49%;
     background-size: .12rem .16rem;
+}
+.save-btn:hover{
+    text-decoration: none;
+    color: #fff;
 }
 .tips{
     color: #000;
@@ -194,6 +205,6 @@ ul li{
     left: 32%;
     width: .18rem;
     height: .18rem;
-    background: url(/src/components/FoodDetail/images/more-down.png) no-repeat;
+    background: url(/src/images/FoodDetail/more-down.png) no-repeat;
     background-size: .18rem .18rem;
 }
