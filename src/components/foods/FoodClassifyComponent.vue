@@ -34,8 +34,9 @@
 <script>
     import "./css/FoodClassifyComponent.css"
 	  import http from '../../utils/HttpClient'
-    import VueRouter from '../../router/index'  
+    import VueRouter from '../../router/index'
     import $ from "jquery"
+    var {API} = require("../../constant/constant.js")
 	export default {
 		name:"vien",
 		data () {
@@ -57,14 +58,13 @@
 			
 		},
 		created() {   
-      var url = location.search;
-      console.log(url);
+      this.type=this.$route.query.foodname;
 			var self = this;
               $.ajax({
-                url:"http://localhost/Vue/No1CookMenu/src/components/foods/foodlist.php",
+                url: API + "No1CookMenu/src/components/foods/foodlist.php",
                 type:'post',
                 data: {
-                	type: '午餐',
+                	type: self.type,
                     show:5,
                     sort:"name",
                     rank:"desc"
@@ -85,7 +85,7 @@
                if (scrollTop + windowHeight === scrollHeight){
                         self.show+=5,
                         $.ajax({
-                            url:'http://localhost/Vue/No1CookMenu/src/components/foods/foodlist.php',
+                            url: API + 'No1CookMenu/src/components/foods/foodlist.php',
                             type:'POST',
                             data: {
                                 type: self.type,
@@ -122,7 +122,7 @@
                 this.i=this.i*(-1);
                }
                $.ajax({
-                    url:'http://localhost/Vue/No1CookMenu/src/components/foods/foodlist.php',
+                    url: API + 'No1CookMenu/src/components/foods/foodlist.php',
                     type:'POST',
                     data: {
                         type: self.type,
@@ -151,7 +151,7 @@
                 this.j=this.j*(-1);
                }
                $.ajax({
-                    url:'http://localhost/Vue/No1CookMenu/src/components/foods/foodlist.php',
+                    url: API + 'No1CookMenu/src/components/foods/foodlist.php',
                     type:'POST',
                     data: {
                         type: self.type,
@@ -179,7 +179,7 @@
                 this.g=this.g*(-1);
                }
                $.ajax({
-                    url:'http://localhost/Vue/No1CookMenu/src/components/foods/foodlist.php',
+                    url: API + 'No1CookMenu/src/components/foods/foodlist.php',
                     type:'POST',
                     data: {
                         type: self.type,

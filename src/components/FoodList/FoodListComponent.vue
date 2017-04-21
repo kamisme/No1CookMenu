@@ -1,6 +1,6 @@
 <template>
     <div id="menuList">
-        <div class="title">
+        <div class="title2">
            <img src="../../images/foodList/lunch/index.png" alt="" @click="toIndex()">
             <span>一号菜谱</span>
         </div>
@@ -34,6 +34,7 @@
     var $ = require("jquery");
 //  Vue.use(VueResource);
     import './css/FoodListComponent.css'
+    var {API} = require("../../constant/constant.js")
     
     export default {
         name: 'home',
@@ -52,7 +53,7 @@
             var that = this;
             var t;
             $.ajax({
-                url:'http://localhost/Vue/No1CookMenu/serverPHP/Business/FoodList/FoodList.php',
+                url: API + "No1CookMenu/serverPHP/Business/FoodList/FoodList.php",
                 type:'POST',
                 data: {
                     type:'breakfast',
@@ -74,7 +75,7 @@
                 if (scrollTop + windowHeight === scrollHeight){
                     that.show+=10,
                     $.ajax({
-                        url:'http://localhost/Vue/No1CookMenu/serverPHP/Business/FoodList/FoodList.php',
+                        url: API + "No1CookMenu/serverPHP/Business/FoodList/FoodList.php",
                         type:'POST',
                         data: {
                             type: that.type,
@@ -96,7 +97,7 @@
                 this.isB = false;
                 this.isC = false;
                 $.ajax({
-                    url:'http://localhost/Vue/No1CookMenu/serverPHP/Business/FoodList/FoodList.php',
+                    url: API + "No1CookMenu/serverPHP/Business/FoodList/FoodList.php",
                     type:'POST',
                     data: {
                         type:'breakfast',
@@ -115,7 +116,7 @@
                 this.isB = true;
                 this.isC = false;
                 $.ajax({
-                    url:'http://localhost/Vue/No1CookMenu/serverPHP/Business/FoodList/FoodList.php',
+                    url: API + "No1CookMenu/serverPHP/Business/FoodList/FoodList.php",
                     type:'POST',
                     data: {
                         type:'lunch',
@@ -134,7 +135,7 @@
                 this.isB = false;
                 this.isC = true;
                 $.ajax({
-                    url:'http://localhost/Vue/No1CookMenu/serverPHP/Business/FoodList/FoodList.php',
+                    url: API + "No1CookMenu/serverPHP/Business/FoodList/FoodList.php",
                     type:'POST',
                     data: {
                         type:'dinner',

@@ -137,6 +137,7 @@
 //	import './css/index.css'
 	import './js/rem.js'
 	import $ from 'jquery'
+	var {API} = require("../../constant/constant.js")
 	
 	export default {
 		data: function(){
@@ -149,7 +150,7 @@
 			var that = this;
 			$.ajax({
 				type: "GET",
-				url: "http://localhost/Vue/No1CookMenu/serverPHP/Business/index/index.php",
+				url:  API + "No1CookMenu/serverPHP/Business/index/index.php",
 //				data:{show:5},
 				success: function(res){
 					that.lists = JSON.parse(res);
@@ -172,7 +173,7 @@
 //              	that.show += 5;
                     console.log(111)
                     $.ajax({
-                        url:'http://localhost/Vue/No1CookMenu/serverPHP/Business/index/index.php',
+                        url: API + 'No1CookMenu/serverPHP/Business/index/index.php',
                         type:'GET'
 //                      data:{show:that.show}
                     })

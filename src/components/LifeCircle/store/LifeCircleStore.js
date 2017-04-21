@@ -4,7 +4,7 @@ import Vuex from "vuex";
 import * as types from "./mutation-types.js";
 
 var $ = require("jquery");
-var {color,LifeCircle_API} = require("../../../constant/constant.js");
+var {color,API} = require("../../../constant/constant.js");
 
 Vue.use(Vuex);
 
@@ -54,7 +54,7 @@ const mutations = {
 	[types.RECEIVE_DATA](state){
 		$.ajax({
 			type:"GET",
-			url:LifeCircle_API,
+			url: API + "No1CookMenu/serverPHP/Business/LifeCircle/LifeCircle.php",
 			success:function(res){
 				// console.log(JSON.parse(res));
 				var data = JSON.parse(res)
@@ -120,7 +120,7 @@ const mutations = {
 				})
 				$.ajax({
 					type:"GET",
-					url:LifeCircle_API,
+					url:API + "No1CookMenu/serverPHP/Business/LifeCircle/LifeCircle.php",
 					success:function(res){
 						$(".loading").css({
 							display:"none"
@@ -167,3 +167,9 @@ export default new Vuex.Store({
 	actions,
 	mutations
 })
+
+//export default new Vuex.Store({
+//	actions: {
+//		test: 'test'
+//	}
+//})

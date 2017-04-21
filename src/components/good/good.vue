@@ -17,7 +17,7 @@
               <li v-for="item in goods" class="food-list food-list-hook">
                 <h1 class="title">{{item.name}}</h1>
                 <ul class="foods clear">
-                  <li v-for="food in item.foods" class="food-item" @click="getIndex">
+                  <li v-for="food in item.foods" class="food-item" @click="getIndex(food.name)">
                     <div class="icon">
                       <span class="foodimg">
                          <img :src="food.src" alt="">
@@ -39,6 +39,7 @@
   import $ from "jquery"
   import data from './data.json';
   import "./goods.css"
+  var {API} = require("../../constant/constant.js")
   export default {
      name: 'good',
      props: {
@@ -58,7 +59,7 @@
     created() {
        let that=this;
    $.ajax({
-          url:"http://localhost/Vue/No1CookMenu/src/components/good/goods.php",
+          url: API + "No1CookMenu/src/components/good/goods.php",
           type:"get",
           success:function(res){
             that.goods = data.goods;
@@ -106,9 +107,8 @@
         this.foodScroll.scrollToElement(el, 300);
       },
       getIndex: function(index){
-                console.log(index)
-                this.$router.push({path:'/foods?id='+this.type+'_'+index})
-            }
+            this.$router.push({path:'/foods?foodname='+index})
+        }
     }
   };
 </script>

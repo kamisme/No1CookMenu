@@ -52,7 +52,7 @@
 <script>
 	//引进常量
 	// import {color} from "../../constant/constant.js";
-	var {color,api} = require("../../constant/constant.js")
+	var {color} = require("../../constant/constant.js")
 
 	// var $ = require("jquery");
 	// import $ from "jquery";
@@ -88,14 +88,17 @@
 			loading:"loading"
 		}),
 		methods:mapActions({
-			lazyload:"lazyload",
-			getAllData:"getAllData"
+//			lazyload:"lazyload",
+//			getAllData:"getAllData"，
+			test: "test"
 		}),
 		created:function(){
+//			console.log(API)
 			// console.log(this.$store)
 			// console.log(this.data)
 			// console.log($.ajax)
 			// console.log($);
+			console.log("getAllData",this.test)
 			this.getAllData();
 			// this.$store.dispatch("getAllData");
 			// console.log(document.getElementsByTagName("img"))
