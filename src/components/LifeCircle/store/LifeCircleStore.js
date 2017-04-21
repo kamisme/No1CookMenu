@@ -48,13 +48,16 @@ const actions = {
 	},
 	lazyload:function({commit}){
 		commit(types.LAZYLOAD_DATA)
+	},
+	routerIndex:function({commit}){
+		commit(types.ROUTER_DATA)
 	}
 }
 const mutations = {
 	[types.RECEIVE_DATA](state){
 		$.ajax({
 			type:"GET",
-			url: API + "No1CookMenu/serverPHP/Business/LifeCircle/LifeCircle.php",
+			url:API + "No1CookMenu/serverPHP/Business/LifeCircle/LifeCircle.php",
 			success:function(res){
 				// console.log(JSON.parse(res));
 				var data = JSON.parse(res)
@@ -68,39 +71,10 @@ const mutations = {
 					state.commit = data[2][0].comimg;
 					state.good = data[2][0].goodimg;
 					state.loading = data[2][0].loading;
-					// console.log(data[2])
-					// console.log(state.data)
 				}
-				
-				// state.data.push(JSON.parse(res));
 			},
 			dataType:"jsonp"
 		})
-		// var page = new Promise(function(resolve,reject){
-		// 	$.ajax({
-		// 		type:"GET",
-		// 		url:"http://localhost/dk/project/No1CookMenu/serverPHP/Business/LifeCircle/LifeCircle.php",
-		// 		success:function(res){
-		// 			console.log(JSON.parse(res));
-
-		// 			state.data = JSON.parse(res);
-		// 		},
-		// 		dataType:"jsonp"
-		// 	})
-		// });
-		// page.then(function())
-		// var page2 = new Promise(function(resolve,reject){
-		// 	$.ajax({
-		// 		type:"GET",
-		// 		url:"http://localhost/dk/project/No1CookMenu/serverPHP/Business/LifeCircle/LifeCircle.php",
-		// 		success:function(res){
-		// 			console.log(JSON.parse(res));
-
-		// 			state.data = JSON.parse(res);
-		// 		},
-		// 		dataType:"jsonp"
-		// 	})
-		// })
 	},
 	[types.LAZYLOAD_DATA](state){
 		// console.log("LAZYLOAD_DATA");
@@ -159,6 +133,9 @@ const mutations = {
 			// 	dataType:"jsonp"
 			// })
 		}
+	},
+	[types.ROUTER_DATA](state){
+		router.push({name:"index"});
 	}
 }
 export default new Vuex.Store({
@@ -167,9 +144,3 @@ export default new Vuex.Store({
 	actions,
 	mutations
 })
-
-//export default new Vuex.Store({
-//	actions: {
-//		test: 'test'
-//	}
-//})

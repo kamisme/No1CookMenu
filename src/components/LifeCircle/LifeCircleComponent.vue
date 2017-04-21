@@ -2,7 +2,7 @@
 	<div class="LifeCircle">
 
 		<h1 :style="{background:color}" ref="hhh">
-			<img v-lazy="icon" height="68" width="68" alt="" @click="toIndex">
+			<img v-lazy="icon" height="68" width="68" alt="" @click="routerIndex">
 			<span>{{title}}</span>
 		</h1>
 		<div class="new">
@@ -52,7 +52,7 @@
 <script>
 	//引进常量
 	// import {color} from "../../constant/constant.js";
-	var {color} = require("../../constant/constant.js")
+	var {color,api} = require("../../constant/constant.js")
 
 	// var $ = require("jquery");
 	// import $ from "jquery";
@@ -88,56 +88,15 @@
 			loading:"loading"
 		}),
 		methods:mapActions({
-//			lazyload:"lazyload",
-//			getAllData:"getAllData"，
-			test: "test"
+			lazyload:"lazyload",
+			getAllData:"getAllData",
+			routerIndex:"routerIndex"
 		}),
-		created:function(){
-//			console.log(API)
-			// console.log(this.$store)
-			// console.log(this.data)
-			// console.log($.ajax)
-			// console.log($);
-			console.log("getAllData",this.test)
+		created:function(){		
 			this.getAllData();
-			// this.$store.dispatch("getAllData");
-			// console.log(document.getElementsByTagName("img"))
-			// console.log(this)
-			// console.log(this.lazyload)
-			// console.log(".imgsrc",$(".imgsrc"));
-			// console.log($("div"));
-			// this.lazyload($(".imgsrc"));
-			// $.ajax({
-			// 	type:"GET",
-			// 	url:"http://localhost/dk/project/No1CookMenu/serverPHP/Business/LifeCircle/LifeCircle.php",
-			// 	success:function(res){
-			// 		console.log(res)
-			// 		console.log(JSON.parse(res));
-			// 	},
-			// 	dataType:"jsonp",
-			// 	error:function(err){
-			// 		console.log(err)
-			// 	}
-			// })
-			// console.log(11)
-			// window.onscroll = this.lazyload($(".imgsrc"))
 		},
-		mounted:function(){
-			//???
-			console.log(this.$refs)
-			console.log(this.$refs.hhh)
-			// console.log(document.getElementsByTagName("img"))
-			// this.$store.dispatch("getAllData");
-			// console.log(22)
-			// console.log($(".imgsrc"));
-			// this.lazyload();
-			// console.log($("div"));
+		mounted:function(){			
 			window.addEventListener("scroll",this.lazyload)
-		},
-		methods: {
-			toIndex: function(){
-				this.$router.push({path: '/'})
-			}
 		}
 	}
 
@@ -323,11 +282,11 @@
 				}
 				.right{
 					float:right;
-					width:50%;
+					width:60%;
 					text-align:right;
 					.com,.good{
 						float:left;
-						width:60px;
+						width:70px;
 						height:22px;
 						margin-top:11px;
 						line-height:22px;
